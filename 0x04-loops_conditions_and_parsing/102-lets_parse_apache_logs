@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# print the id of apache access
+
+awk '{print $1,$9}' apache-access.log
