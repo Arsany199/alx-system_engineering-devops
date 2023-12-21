@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# print the id of a group of visitors using apache
+
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr
