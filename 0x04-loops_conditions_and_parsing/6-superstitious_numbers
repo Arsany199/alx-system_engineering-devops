@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # print 1 to 20 except in 4 & 9 & 17
 
-i=0
+i=1
 while [ $i -lt 21 ]
 do
 case $i in
