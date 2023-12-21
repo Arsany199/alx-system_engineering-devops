@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# print the content of the directory without the numbers
+
+for files in *
+do
+echo "$files" | cut -d "-" -f2
+done
