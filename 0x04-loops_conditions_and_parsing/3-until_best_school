@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# print the sentence using untill
+
+i=10
+until [ $i -lt 1 ]
+do
+    echo "Best School"
+    let i-=1
+done
