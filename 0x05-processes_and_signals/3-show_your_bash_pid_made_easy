@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script print the pid with the process name whose contain bash word
+
+pgrep -l bash
