@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# print all the ipv4 adrress in the computer
+
+ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d" " -f1
