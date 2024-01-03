@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script that prints all listening sockets and pids
+netstat -lp
