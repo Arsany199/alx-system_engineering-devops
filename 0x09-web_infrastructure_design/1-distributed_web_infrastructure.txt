@@ -1,0 +1,28 @@
+Task 1
+EXPLAIN
+-------
+
+For every additional element, why you are adding it: adding a new server allowed us to add 
+a load balancer to organize the traffic and we removed SPOF that we have one server only
+
+What distribution algorithm your load balancer is configured with and how it works: The round robin algorithm
+connect in order unless a server is down. Requests are served sequentially
+
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both:
+The load balancer work with active-active that both nodes are running at the same time. While active-passive not all node are active
+at the same time if one is active the other is passive or standby
+
+How a database Primary-Replica (Master-Slave) cluster works: master-slave enables data from one database server(master)
+to other databases(slaves) where the master do all operations (INSERT, UPDATE, DELETE).
+while slaves read only the copies of the master
+
+What is the difference between the Primary node and the Replica node in regard to the application:
+the main diffrence between them is their functionality and data consistency.
+Primary node: Handles writes, ensures data authority, limited read access, single point of failure
+Replica node: Handles reads, improves performance and availability, eventual consistency, read-only
+
+Where are SPOF: the single point of fail is the load balancer
+
+Security issues (no firewall, no HTTPS): that will lead to unsecured transportation between nodes
+
+No monitoring: since there is no monitoring we can't istimate the downtime
