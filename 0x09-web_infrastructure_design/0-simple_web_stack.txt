@@ -1,0 +1,28 @@
+TASK 0
+DEFINITIONS
+-----------
+
+server: computer or a virtual comuter that provides functionallity for other users
+
+domain names: the work like a translator from our human language and return IP address
+
+What type of DNS record www is in www.foobar.com: CNAME
+
+What is the role of the web server: it's a type of servers the is responsible for providing servers
+it take an HTML request and return the HTML of a specific IP address
+
+What is the role of the application server: generate dynamic contents by executing server side code
+
+What is the role of the database: manage the data effecintlly in an organized manner that ease
+the actions in the database(add, delete, update...)
+
+What is the server using to communicate with the computer of the user requesting the website: HTTP
+
+ISSUES
+------
+
+SPOF: a part of a system that if it fails the entire system will stop
+
+Downtime when maintenance needed: the downtime may be too long cause the server depends on one code base (app base)
+
+Cannot scale if too much incoming traffic: because there is no load balancer
