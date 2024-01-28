@@ -1,0 +1,39 @@
+TASK 2
+EXPLAIN
+-------
+
+For every additional element, why you are adding it:
+1. we added fire walls to act as a gatekeeper that control the traffic that enter and leave my network it's important for my security
+2. SSL certification(HTTPS) that secures the transportation of my data on the internet from attackers(hackers, viruses)
+3. monitors that will collect logs and send it to our collector sumologic
+
+What are firewalls for:
+act as a gatekeeper that control the traffic that enter and leave my network it's important for my security
+simply it makes barrier betwwen trusted network and the untrusted
+
+Why is the traffic served over HTTPS:
+HTTPS is secured where data is encrypted using transfer layer security(TLS)
+
+What monitoring is used for:
+it allows us to watch and detect any performance issue in our web application
+
+How the monitoring tool is collecting data:
+it collects logs of the application server, mySQL database and web server.
+a log in computing context is the automaticlly produced and time-stamped documentation of events
+
+Explain what to do if you want to monitor your web server QPS:
+one web server handles 1000 queries per second 
+
+ISSUES
+------
+
+Why terminating SSL at the load balancer level is an issue:
+1.the traffic between the load balancer and the web servers is unencrypted
+2.Web servers cannot directly see the original client IP address and other TLS handshake information
+3.Setting up and managing SSL termination on the load balancer can be more complex than managing it directly on web servers
+
+Why having only one MySQL server capable of accepting writes is an issue:
+because once it's down that mean that the data is down also...that will leads to fail some features of the application
+
+Why having servers with all the same components (database, web server and application server) might be a problem:
+beacuse once there is a (bug, virus...) in one server it will get to the other
