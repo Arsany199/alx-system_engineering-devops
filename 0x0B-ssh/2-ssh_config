@@ -1,0 +1,4 @@
+# configuration using ssh to avoid using password
+Host 52.201.211.116
+      PasswordAuthentication no
+      IdentifyFile ~/.ssh/school
