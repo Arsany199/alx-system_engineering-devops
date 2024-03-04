@@ -1,4 +1,4 @@
-tom http header response NGiNX
+# custom http header response NGiNX
 exec {'update':
   command => '/usr/bin/apt-get update',
 }
