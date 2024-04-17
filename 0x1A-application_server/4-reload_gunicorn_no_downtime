@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# gracefully reloads gunicorn to reduce downtime
+
+pgrep gunicorn | xargs kill -HUP
