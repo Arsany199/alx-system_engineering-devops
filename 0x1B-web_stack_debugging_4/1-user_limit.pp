@@ -1,2 +1,5 @@
 # holberton user can login without any errors
-exec { '/usr/bin/env sed -i "s/holberton/foo/" /etc/security/limits.conf': }
+exec {'OS security config':
+  command => 'sed -i "s/holberton/foo/" /etc/security/limits.conf',
+  path    => '/usr/bin/env/:/bin/:/usr/bin/:/usr/sbin/'
+}
